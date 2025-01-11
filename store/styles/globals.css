@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 100vw;
+  justify-content: start;
+  flex-direction: column;
+  gap: 0;
+  overflow-x : hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246/var(--tw-bg-opacity,1));
+  font-size: 1.125rem;
+  font-weight:700 ;
+}
+.dropdown:is(:not(details)) .dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  transform-origin: top;
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+  rotate(var(--tw-rotate))
+  skewX(var(--tw-skew-x))
+  skewY(var(--tw-skew-y))
+  scaleX(var(--tw-scale-x))
+  scaleY(var(--tw-scale-y));
+  transition-property: color, background-color, border-color, text-decoration-color,
+  fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .2s;
+}
+
+.dropdown:is(:not(details)) .dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  transform-origin: top;
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+  rotate(var(--tw-rotate))
+  skewX(var(--tw-skew-x))
+  skewY(var(--tw-skew-y))
+  scaleX(var(--tw-scale-x))
+  scaleY(var(--tw-scale-y));
+  transition-property: color, background-color, border-color, text-decoration-color,
+  fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .2s;
+  position: absolute;
+}
+
+
+
+
+
+#__next {
+  width: 1536px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-controls {
+  position: absolute;
+  left: 1rem; /* فاصله از سمت چپ */
+  top: 50%; /* وسط عمودی */
+  transform: translateY(-50%); /* تنظیم به صورت دقیق در وسط */
+  z-index: 10; /* دکمه‌ها بالاتر از تصاویر */
+  display: flex;
+  flex-direction: column; /* دکمه‌ها به صورت عمودی چیده می‌شوند */
+  gap: 1rem; /* فاصله بین دکمه‌ها */
+}
+.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
+  flex-direction: row-reverse;
+}
+.keen-slider:not([data-keen-slider-disabled]) {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  align-content: flex-start;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -khtml-user-select: none;
+  width: 100%;
+}
+.navigation-wrapper .slider-controls {
+  position: absolute;
+  left: 1rem; /* فاصله از سمت چپ */
+  top: 50%; /* قرارگیری در وسط عمودی */
+  transform: translateY(-50%);
+  z-index: 10; /* بالاتر از تصاویر */
+  display: flex;
+  flex-direction: column; /* دکمه‌ها یکی زیر دیگری */
+  gap: 1rem; /* فاصله بین دکمه‌ها */
+}
+.mainStore{
+  width: 1536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+parent-container {
+  max-width: 1200px; /* تنظیم عرض کلی والدین */
+  margin: 0 auto; /* وسط‌چین کردن اسلایدر */
+}
+@media screen {
+  html:not(.no-js) [data-aos^="zoom"][data-aos^="zoom"].aos-animate {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }
+}
+[data-aos][data-aos-delay="150"].aos-animate, body[data-aos-delay="150"] [data-aos].aos-animate {
+  transition-delay: .15s;
+}
+@media screen {
+  html:not(.no-js) [data-aos^="zoom"][data-aos^="zoom"] {
+    opacity: 0;
+    transition-property: opacity,transform;
+  }
+}
+[data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+[data-aos][data-aos][data-aos-delay="150"], body[data-aos-delay="150"] [data-aos] {
+  transition-delay: 0s;
+}
+@media screen {
+  html:not(.no-js) [data-aos="zoom-in-down"] {
+    transform: translate3d(0,-100px,0) scale(.6);
+  }
+}
+[data-aos][data-aos-easing="ease"], body[data-aos-easing="ease"] [data-aos] {
+  transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+  transition-duration: .4s;
+}
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
